@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Dark text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height */
+    margin: 0;
+}
+
+.container {
+    background-color: #fff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the container */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Reduced max width for smaller screens */
+}
+
+h1 {
+    color: #4CAF50; /* Green heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 15px; /* Spacing below heading */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Spacing between form groups */
+}
+
+label {
+    margin-bottom: 3px; /* Spacing below labels */
+    font-weight: bold; /* Bold labels */
+    display: block; /* Block display for labels */
+    font-size: 14px; /* Smaller font size for labels */
+}
+
+input[type="number"], 
+input[type="text"] {
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded input corners */
+    padding: 8px; /* Padding inside inputs */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    font-size: 14px; /* Smaller font size for inputs */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside button */
+    border-radius: 4px; /* Rounded button corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.result-message {
+    margin-top: 15px; /* Reduced spacing for result messages */
+    font-size: 16px; /* Smaller font size for messages */
+    text-align: center; /* Center the result text */
+}
+
+.success {
+    color: #4CAF50; /* Green color for success messages */
+}
+
+.error {
+    color: #f44336; /* Red color for error messages */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Slightly smaller heading */
+    }
+
+    button {
+        padding: 8px; /* Reduce button padding */
+        font-size: 14px; /* Smaller font size for button */
+    }
+
+    .result-message {
+        font-size: 14px; /* Slightly smaller font for messages */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Further reduce padding for mobile devices */
+        width: 95%; /* Make the container slightly wider on mobile */
+    }
+
+    h1 {
+        font-size: 1.3em; /* Further decrease heading size */
+    }
+
+    button {
+        padding: 8px; /* Maintain button padding */
+        font-size: 14px; /* Maintain button font size */
+    }
+
+    input[type="number"], 
+    input[type="text"] {
+        padding: 6px; /* Reduce input padding */
+        font-size: 12px; /* Adjust input font size */
+    }
+}
